@@ -5,6 +5,11 @@ city flares, and local clocks around the world. The native OpenGL ES renderer
 pauses when the desktop is covered, so it does not keep rendering behind an
 opaque maximized or tiled workspace.
 
+Inspired by the **Cities of Earth** screensaver from
+[Screenomania](https://www.screenomania.com/).
+
+![World Clock Wallpaper running on Omarchy](preview.png)
+
 Plugin ID: `spacexrace.worldclock`
 
 ## Install
@@ -63,6 +68,33 @@ the existing static wallpaper is revealed immediately.
 The wallpaper never changes the current Omarchy theme, does not inhibit idle
 or locking, and does not use the network at runtime. It currently targets one
 display.
+
+## Power usage
+
+The 8K wallpaper was measured at 30 fps on a battery-powered Lenovo laptop with
+an AMD integrated GPU and a 2560×1600 display. Three alternating one-minute
+stopped/running pairs were recorded on an otherwise empty workspace; the first
+10 seconds of each block were discarded for settling.
+
+| Condition | Mean battery discharge | Whole-system CPU | Renderer CPU | GPU busy |
+| --- | ---: | ---: | ---: | ---: |
+| Wallpaper stopped | 6.75 W | 2.50% | 0% | 0% |
+| 8K wallpaper visible, 30 fps | 7.97 W | 2.86% | 3.58% of one core | 10.29% |
+| Difference | **+1.23 W** | +0.35 points | +3.58% of one core | +10.29 points |
+
+The +1.23 W figure is a measurable whole-laptop increase while the desktop is
+continuously visible, not a claim about isolated GPU power. The renderer pauses
+when windows cover at least 95% of its display, so normal windowed work incurs
+the cost only during the relatively short periods when the wallpaper can
+actually be seen. As an illustration, if the desktop is visible for 10% of a
+session, the measured visible-desktop difference corresponds to roughly 0.12 W
+averaged over that session. That makes the practical impact negligible for
+typical covered-desktop usage, though it will be higher for anyone who leaves
+the desktop exposed for long periods.
+
+The three paired increases were 1.213 W, 1.207 W, and 1.262 W. The retained
+measurement summary is available in
+[`measurements/8k-power-summary.json`](measurements/8k-power-summary.json).
 
 ## Development
 
