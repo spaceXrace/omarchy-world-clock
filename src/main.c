@@ -431,12 +431,15 @@ static void scene(void) {
     float scale = height / 1000.f;
     /* The original GLScene sky dome uses this astronomical point catalogue.
        Equirectangular screen projection gives its rotation a seamless horizontal wrap. */
-    float star_offset = fmodf(now * width / 450.f, width);
+    float star_offset = fmodf(now * width / 300.f, width);
+    int visible_star = 0;
     for (int i = 0; i < star_count; i++) {
         Star *s = &stars[i];
-        /* Keep the brighter fifth of the original catalogue. The full naked-eye
-           data set is overpowering at wallpaper scale. */
+        /* Keep the brighter fifth of the catalogue, then render every other
+           candidate to keep the background sparse. */
         if (s->magnitude > 2.5f)
+            continue;
+        if (visible_star++ & 1)
             continue;
         float x = fmodf(s->ra / 360.f * width + star_offset, width);
         float y = (90 - s->dec) / 180.f * height;

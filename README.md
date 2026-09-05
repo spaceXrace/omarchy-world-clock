@@ -13,18 +13,6 @@ Plugin ID: `spacexrace.worldclock`
 omarchy plugin add https://github.com/spaceXrace/omarchy-world-clock.git --enable
 ```
 
-The first enable builds the native renderer into
-`~/.cache/spacexrace.worldclock`; the git-managed plugin checkout stays clean
-and can be updated normally. A stock Omarchy installation usually has the
-required build stack. If the first build reports missing dependencies, install
-them once:
-
-```sh
-omarchy pkg add gcc make pkgconf wayland wayland-protocols libglvnd libpng glib2
-omarchy plugin disable spacexrace.worldclock
-omarchy plugin enable spacexrace.worldclock
-```
-
 ## Toggle and startup
 
 Open the Omarchy menu and choose:
@@ -67,7 +55,7 @@ the existing static wallpaper is revealed immediately.
 ## Behavior
 
 - Earth rotation period: 7.5 minutes
-- Background star drift period: 7.5 minutes
+- Background star drift period: 5 minutes
 - Default cap: 30 fps
 - Coverage pause threshold: 95% of the target output
 - Default output: the focused display at launch
