@@ -84,10 +84,8 @@ make
 omarchy plugin validate .
 ```
 
-Run `tools/generate_atlas.py` only when regenerating the bundled font atlas; it
-requires Pillow and `ttf-dejavu`.
-
 ## License
 
-Code is MIT licensed. Redistributable third-party data and artwork retain their
-own licenses; see [ATTRIBUTION.md](ATTRIBUTION.md).
+Code is MIT licensed. Third-party data and artwork retain their own terms; see
+[ATTRIBUTION.md](ATTRIBUTION.md). In particular, the extracted bitmap fonts do
+not have a confirmed redistribution license.

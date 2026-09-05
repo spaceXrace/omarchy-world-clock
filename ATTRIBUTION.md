@@ -12,8 +12,12 @@ Department of Economic and Social Affairs, Population Division (2025),
 [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Values are
 mid-year 2025 DEGURBA urban-area estimates.
 
-The bitmap font atlas is generated from DejaVu Sans. Its license is reproduced
-in `third-party/DEJAVU-FONTS-LICENSE.txt`.
+The bitmap font atlas and glyph metrics were extracted from the freeware
+Screenomania Cities of Earth screensaver supplied to the project. The original
+font family names and an explicit redistribution license have not been
+identified. They are included on the repository owner's assertion that the
+freeware distribution permits this use; downstream redistributors should make
+their own assessment.
 
 Solar position uses NOAA's fractional-year solar equations for declination and
 equation of time.
