@@ -18,6 +18,13 @@ Plugin ID: `spacexrace.worldclock`
 omarchy plugin add https://github.com/spaceXrace/omarchy-world-clock.git --enable
 ```
 
+## Requirements
+
+World Clock builds its native renderer locally on first enable. It uses the
+standard Omarchy development stack: a C compiler, Make, pkg-config, Wayland and
+Wayland protocols, EGL/OpenGL ES, libpng, GLib, and Python 3. It does not
+download code or data at runtime and does not request elevated privileges.
+
 ## Toggle and startup
 
 Open the Omarchy menu and choose:
@@ -28,6 +35,12 @@ The entry is added to the user extension file, so Omarchy updates do not
 overwrite it. The check mark means the wallpaper is enabled. That enabled state
 is stored by Omarchy itself: enabled starts automatically with the desktop;
 disabled stays off across restarts.
+
+Enabling the plugin explicitly authorizes it to add or refresh its clearly
+marked `spacexrace.worldclock` block in
+`~/.config/omarchy/extensions/omarchy-menu.jsonc`. It preserves the rest of the
+file. Run the documented `uninstall-menu` command under **Remove** to delete
+that block before removing the plugin.
 
 The terminal equivalents are:
 
