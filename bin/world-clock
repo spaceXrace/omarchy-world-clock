@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+cache_root=${XDG_CACHE_HOME:-$HOME/.cache}/spacexrace.worldclock
+binary=$cache_root/build/cities-earth
+
+notify_error() {
+  command -v notify-send >/dev/null && notify-send -u critical -a "World Clock Wallpaper" "World Clock Wallpaper" "$1"
+  printf 'world-clock: %s\n' "$1" >&2
+}
+
+require_build_tools() {
+  local missing=()
+  local command_name
+  for command_name in cc make pkg-config wayland-scanner python3; do
+    command -v "$command_name" >/dev/null || missing+=("$command_name")
+  done
+  pkg-config --exists wayland-client wayland-egl egl glesv2 libpng glib-2.0 || missing+=("Wayland/EGL/GLES/libpng/GLib development packages")
+  if (( ${#missing[@]} )); then
+    notify_error "Missing build requirements: ${missing[*]}. See the plugin README."
+    return 1
+  fi
+}
+
+case "${1:-run}" in
+  run)
+    python3 "$root/tools/menu_extension.py" install
+    if [[ ! -x $binary || $root/src/main.c -nt $binary || $root/src/fonts.h -nt $binary ]]; then
+      require_build_tools
+      mkdir -p "$cache_root/build"
+      if ! make -C "$root" BUILD_DIR="$cache_root/build"; then
+        notify_error "The native renderer could not be built. Run this command in a terminal for details."
+        exit 1
+      fi
+    fi
+    exec python3 "$root/tools/wallpaper.py" --binary "$binary"
+    ;;
+  toggle)
+    if omarchy plugin list --json | jq -e 'any(.[]; .id == "spacexrace.worldclock" and .enabled)' >/dev/null; then
+      exec omarchy plugin disable spacexrace.worldclock
+    else
+      exec omarchy plugin enable spacexrace.worldclock
+    fi
+    ;;
+  status)
+    omarchy plugin list --json | jq -r '.[] | select(.id == "spacexrace.worldclock") | if .enabled then "on" else "off" end'
+    ;;
+  uninstall-menu)
+    exec python3 "$root/tools/menu_extension.py" uninstall
+    ;;
+  *)
+    echo "Usage: world-clock {run|toggle|status|uninstall-menu}" >&2
+    exit 2
+    ;;
+esac

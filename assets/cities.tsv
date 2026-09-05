@@ -1,0 +1,77 @@
+# name	country	population_millions	latitude	longitude	IANA_timezone
+Shanghai	China	29.558908	31.23	121.47	Asia/Shanghai
+Mumbai	India	20.203056	18.96	72.82	Asia/Kolkata
+Karachi	Pakistan	21.42259	24.86	67.01	Asia/Karachi
+Buenos Aires	Argentina	14.017736000000001	-34.61	-58.37	America/Argentina/Buenos_Aires
+Delhi	India	30.222405	28.67	77.21	Asia/Kolkata
+Manila	Philippines	24.735305	14.62	120.97	Asia/Manila
+Moscow	Russia	14.524753	55.75	37.62	Europe/Moscow
+Seoul	South Korea	22.490482	37.56	126.99	Asia/Seoul
+Istanbul	Turkey	15.014763	41.1	29.0	Europe/Istanbul
+Sao Paulo	Brazil	18.94979	-23.53	-46.63	America/Sao_Paulo
+Lagos	Nigeria	12.791699000000001	6.45	3.47	Africa/Lagos
+Mexico City	Mexico	17.734212	19.43	-99.14	America/Mexico_City
+Jakarta	Indonesia	41.91386	-6.18	106.83	Asia/Jakarta
+Kinshasa	DR Congo	10.943641	-4.31	15.32	Africa/Kinshasa
+Tokyo	Japan	33.412512	35.67	139.77	Asia/Tokyo
+New York	USA	13.920148	40.67	-73.94	America/New_York
+Lima	Peru	10.580241	-12.07	-77.05	America/Lima
+Cairo	Egypt	25.566101999999997	30.06	31.25	Africa/Cairo
+Beijing	China	17.013303	39.93	116.4	Asia/Shanghai
+London	United Kingdom	10.41642	51.52	-0.1276	Europe/London
+Bogota	Colombia	10.624315000000001	4.63	-74.09	America/Bogota
+Tehran	Iran	9.174964	35.67	51.43	Asia/Tehran
+Dhaka	Bangladesh	36.585479	23.7	90.39	Asia/Dhaka
+Lahore	Pakistan	15.15643	31.56	74.35	Asia/Karachi
+Rio de Janeiro	Brazil	9.500335999999999	-22.91	-43.2	America/Sao_Paulo
+Baghdad	Iraq	6.390734999999999	33.33	44.44	Asia/Baghdad
+Bengaluru	India	13.187098	12.97	77.56	Asia/Kolkata
+Santiago	Chile	6.726045	-33.46	-70.64	America/Santiago
+Bangkok	Thailand	18.18028	13.73	100.5	Asia/Bangkok
+Toronto	Canada	5.494431	43.65	-79.38	America/Toronto
+Yangon	Myanmar	5.618303	16.79	96.15	Asia/Yangon
+Kolkata	India	22.549738	22.57	88.36	Asia/Kolkata
+Sydney	Australia	4.150917000000001	-33.87	151.21	Australia/Sydney
+Saint Petersburg	Russia	4.736499	59.93	30.32	Europe/Moscow
+Los Angeles	USA	12.74042	34.11	-118.41	America/Los_Angeles
+Alexandria	Egypt	7.2669570000000006	31.22	29.95	Africa/Cairo
+Kano	Nigeria	4.84028	12.0	8.52	Africa/Lagos
+Ibadan	Nigeria	3.720721	7.38	3.93	Africa/Lagos
+Melbourne	Australia	3.639893	-37.81	144.96	Australia/Melbourne
+Cape Town	South Africa	4.508921	-33.93	18.46	Africa/Johannesburg
+Singapore	Singapore	4.963997999999999	1.3	103.85	Asia/Singapore
+Berlin	Germany	3.560908	52.52	13.38	Europe/Berlin
+Montreal	Canada	2.668723	45.52	-73.57	America/Toronto
+Madrid	Spain	5.583601	40.42	-3.71	Europe/Madrid
+Chicago	USA	3.6833850000000004	41.84	-87.68	America/Chicago
+Rome	Italy	2.376474	41.89	12.5	Europe/Rome
+Kyiv	Ukraine	2.6145810000000003	50.43	30.52	Europe/Kyiv
+Havana	Cuba	1.59358	23.13	-82.39	America/Havana
+Paris	France	9.381921	48.86	2.34	Europe/Paris
+Houston	USA	3.955046	29.77	-95.39	America/Chicago
+Wuhan	China	7.363548	30.58	114.27	Asia/Shanghai
+Brisbane	Australia	1.071628	-27.46	153.02	Australia/Brisbane
+Wellington	New Zealand	0.14855500000000002	-41.28	174.77	Pacific/Auckland
+Vancouver	Canada	1.707865	49.28	-123.13	America/Vancouver
+Brasilia	Brazil	1.521148	-15.78	-47.91	America/Sao_Paulo
+Mecca	Saudi Arabia	1.692152	21.43	39.82	Asia/Riyadh
+Dubai	United Arab Emirates	5.283789	25.27	55.33	Asia/Dubai
+Yokohama	Japan	33.412512	35.47	139.62	Asia/Tokyo
+Osaka	Japan	12.964145	34.68	135.5	Asia/Tokyo
+Taipei	Taiwan	9.136792	25.02	121.45	Asia/Taipei
+Phoenix	USA	1.972021	33.54	-112.07	America/Phoenix
+Philadelphia	USA	2.2324200000000003	40.01	-75.13	America/New_York
+San Diego	USA	1.915114	32.81	-117.14	America/Los_Angeles
+San Antonio	USA	1.686163	29.46	-98.51	America/Chicago
+Dallas	USA	1.521118	32.79	-96.77	America/Chicago
+Detroit	USA	0.809894	42.38	-83.1	America/New_York
+San Francisco	USA	3.163486	37.77	-122.45	America/Los_Angeles
+Las Vegas	USA	2.1836550000000003	36.21	-115.22	America/Los_Angeles
+Washington	USA	3.270018	38.91	-77.02	America/New_York
+Seattle	USA	1.403495	47.62	-122.35	America/Los_Angeles
+Miami	USA	2.912486	25.78	-80.21	America/New_York
+Honolulu	USA	0.540683	21.32	-157.8	Pacific/Honolulu
+Novosibirsk	Russia	1.331432	55.04	82.93	Asia/Novosibirsk
+Yekaterinburg	Russia	1.1482370000000002	56.8389	60.6057	Asia/Yekaterinburg
+Nizhny Novgorod	Russia	1.196944	56.33	44.0	Europe/Moscow
+Petropavlovsk	Russia	0.13245400000000002	53.0	158.6	Asia/Kamchatka

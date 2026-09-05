@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "spacexrace.worldclock",
+  "name": "World Clock Wallpaper",
+  "version": "1.0.0",
+  "author": "spaceXrace",
+  "license": "MIT",
+  "description": "An animated Earth wallpaper with real daylight and local times around the world.",
+  "kinds": ["service"],
+  "entryPoints": {
+    "service": "Service.qml"
+  }
+}
