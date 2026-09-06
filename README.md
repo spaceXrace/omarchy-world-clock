@@ -1,6 +1,6 @@
-# World Clock Wallpaper for Omarchy
+# World Clock (3D Wallpaper) for Omarchy
 
-An animated Wayland wallpaper with a rotating Earth, real-time daylight,
+An animated 3D Wayland wallpaper with a rotating Earth, real-time daylight,
 city flares, and local clocks around the world. The native OpenGL ES renderer
 pauses when the desktop is covered, so it does not keep rendering behind an
 opaque maximized or tiled workspace.
@@ -8,7 +8,7 @@ opaque maximized or tiled workspace.
 Inspired by the **Cities of Earth** screensaver from
 [Screenomania](https://www.screenomania.com/).
 
-![World Clock Wallpaper running on Omarchy](preview.png)
+![World Clock (3D Wallpaper) running on Omarchy](preview.png)
 
 Plugin ID: `spacexrace.worldclock`
 
