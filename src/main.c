@@ -760,7 +760,7 @@ int main(int argc, char **argv) {
         if (!layer_shell)
             die("Missing layer-shell");
         layer = zwlr_layer_shell_v1_get_layer_surface(
-            layer_shell, surface, output, ZWLR_LAYER_SHELL_V1_LAYER_BACKGROUND, "cities-earth");
+            layer_shell, surface, output, ZWLR_LAYER_SHELL_V1_LAYER_BOTTOM, "cities-earth");
         zwlr_layer_surface_v1_set_anchor(layer, 15);
         zwlr_layer_surface_v1_set_exclusive_zone(layer, -1);
         zwlr_layer_surface_v1_set_keyboard_interactivity(layer, 0);

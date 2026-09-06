@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "spacexrace.worldclock",
   "name": "World Clock (3D Wallpaper)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "spaceXrace",
   "license": "MIT",
   "description": "An animated 3D Earth wallpaper with real daylight and local times around the world.",
